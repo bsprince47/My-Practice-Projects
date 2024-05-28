@@ -1,0 +1,80 @@
+* , *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: system-ui, Inter, sans-serif;
+    font-size: 14px;
+    height: 100vh;
+    background: url('./andre-benz-JnB8Gio4GZo-unsplash.jpg') right/cover no-repeat fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.page {
+    width: 400px;
+    height: fit-content;
+    background: rgba(255,255,255, 0.5);
+    border-radius: 1em;
+    border: 1px solid #fff;
+    /* box-shadow: 0  0 20px 1px #fff; */
+    backdrop-filter: blur(.3em);
+}
+
+.page .page {
+    background: rgba(255,255,255, .35);
+    backdrop-filter: blur(.5em);
+}
+
+.page-common {
+    padding: 1em;
+}
+
+.page-header {
+    h3 {
+        font-size: 30px;
+
+    }
+    h5 {
+        letter-spacing: 18px;
+        font-size: 16px;
+        color: #0009;
+    }
+}
+
+.page-content {
+    h5 {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        text-align: justify;
+        &::first-letter {
+            font-size: 18px;
+            font-weight: bold;
+            color: green;
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.page-footer {
+    address {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+}
